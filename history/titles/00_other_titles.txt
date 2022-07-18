@@ -1,0 +1,27 @@
+k_asturias = {
+	866.5.27 = {
+		holder = 70019 # Alfonso III Ordóñez
+	}
+}
+
+c_astorga = {
+	867.1.1 = {
+		holder = 73757 # Gatón del Bierzo
+		liege = k_asturias
+	}
+}
+
+c_coruna = {
+	867.1.1 = {
+		holder = 73855 # Gutierre Alóitez
+		liege = k_asturias
+	}
+}
+
+d_barcelona = {
+	867.1.1 = {
+		holder = 168137 # Bernard de Gothia
+		liege = k_aquitaine
+		de_jure_liege = k_valencia
+	}
+}

@@ -1,0 +1,123 @@
+﻿168028 = {
+	name = "Bilchilde"
+	female = yes
+	dynasty = 9569
+	religion = "catholic"
+	culture = french
+	father = 168020
+	mother = 168026
+	820.1.1 = {
+		birth = "820.1.1"
+	}
+	
+	877.1.1 = {
+		death = "877.1.1"
+	}
+}
+
+168136 = {
+	name = "Bernat"
+	dna = 168137_bernat_of_gothia
+	dynasty = 100217
+	religion = "catholic"
+	culture = "occitan"
+	father = 168129
+	802.1.1 = {
+		birth = "802.1.1"
+	}
+	840.1.1 = {
+		add_spouse = 168028
+	}
+	845.1.1 = {
+		death = "845.1.1"
+	}
+}
+
+168137 = {
+	name = "Bernat" # Bernard de Gothia, Duke of Barcelona (865-878) & Count of Barcelona & Rousillon (865-878) & Girona (870-878)
+	dna = 168137_bernat_of_gothia
+	dynasty = 100217
+	religion = "catholic"
+	culture = "occitan"
+	father = 168136
+	mother = 168028
+
+	# Skills
+	martial = 8
+	diplomacy = 9
+	intrigue = 6
+	stewardship = 7
+	learning = 5
+	prowess = 10
+
+	# Education
+	trait = education_martial_3
+
+	# Personality Traits
+	## We know he was generally pretty dutiful as a vassal, and held the march well for over a decade.
+	trait = stubborn
+	trait = diligent
+	trait = wrathful
+
+	# Other Traits
+	trait = strategist
+
+	disallow_random_traits = yes
+
+	842.1.1 = {
+		birth = "842.1.1"
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+	858.1.1 = {
+		add_spouse = 168147
+	}
+	865.1.1 = {
+		effect = {
+			# Appointed to the Gothic March.
+			vassal_contract_set_obligation_level = {
+				type = special_contract
+				level = 2
+			}
+			# Got along well with his neighbour to the north.
+			set_relation_friend = character:127007
+		}
+	}
+	880.1.1 = {
+		death = "880.1.1"
+	}
+}
+
+168138 = {
+	name = "E_menon"
+	dynasty = 100217
+	religion = "catholic"
+	culture = "occitan"
+	father = 168136
+	mother = 168028
+	844.1.1 = {
+		birth = "844.1.1"
+	}
+	
+	878.1.1 = {
+		death = "878.1.1"
+	}
+}
+
+168147 = {
+	name = "Fulcrade"
+	dna = 168147_fulcrade_of_gothia
+	female = yes
+	dynasty = 727
+	religion = "catholic"
+	culture = "occitan"
+	trait = education_martial_2
+	father = 127006
+	840.1.1 = {
+		birth = "840.1.1"
+	}
+	878.1.1 = {
+		death = "878.1.1"
+	}
+}
